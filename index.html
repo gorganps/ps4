@@ -2,17 +2,84 @@
 <head>
 <title>Gorgan PS v9.00 [GoldHEN v2.2.4]</title>
 <style>
-body{background-image: url("bg.jpg");background-repeat: no-repeat;background-size:90%;background-position: center;background-color: black;
-color:white;font-size:20px;text-align:center;margin:0;overflow:hidden;}
-.info{overflow: hidden;position: fixed;position: absolute;top: 35%;left: 50%;font-size: 25px;font-family: sans-serif;color: white;transform: translate(-50%, -50%);}
+body {
+    background-image: url("bg.jpg");
+    background-repeat: no-repeat;
+    background-size: 90%;
+    background-position: center;
+    background-color: black;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    margin: 0;
+    overflow: hidden;
+    font-family: 'Arial', sans-serif;
+}
+
+.info {
+    overflow: hidden;
+    position: fixed;
+    position: absolute;
+    top: 40%; /* Adjust for centering */
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.info img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+    animation: bounce 2s infinite;
+}
+
+.info h1 {
+    font-size: 28px;
+    font-weight: bold;
+    margin: 10px 0;
+    color: #ff8c00;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);
+}
+
+.info p {
+    font-size: 18px;
+    margin: 5px 0;
+    color: #ffffff;
+}
+
+/* Animation Keyframes */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
 </style>
 </head>
 <body onload="setTimeout(webkitExploit,500);"><!--  -->
 <script src="exploit.js"></script>
-<div id="msgs" class="info">Instagram : @Gorgan.PS<br>
-     Webkit Exploit, Please Wait ...</div>
+<div id="msgs" class="info">
+    <!-- Instagram Logo in Base64 -->
+    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAAAAACPAi4CAAAACXBIWXMAAB7CAAAewgFu0HU+AAAAy0lEQVR42u3XwQ2CQBBG4cmkXHGoe+e9P4gZmZpsaxW/gQQNys/ryNxGIhaIYZIkOYBwCeNCjVJmAKx0iKDv0FnAAgg0LYBgijC1UgBFGKAakJgDTINZSUANAA2C4DFLJEBMyVnKFcCWvKAP/AAgH+CoCVvWFrtwE48fwPYCVqqGADhfRg/oA2Ao2shItVaaypYZVtW+sGL2i4FkOrMf2B/m9oxD1FoA/hEAymH4W0CKXkgy50cRYdg3gDtM7NCb5hmElAAAAAElFTkSuQmCC" alt="Instagram Logo">
+    <h1>@Gorgan.PS</h1>
+    <p>Webkit Exploit, Please Wait...</p>
+</div>
 <script>
-if (window.applicationCache.status=='0'){window.location.replace("cache.html");}
+if (window.applicationCache.status == '0') {
+    window.location.replace("cache.html");
+}
 </script>
 </body>
 </html>
