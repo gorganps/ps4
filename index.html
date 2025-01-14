@@ -48,6 +48,18 @@ body {
     color: #ffffff;
 }
 
+.rtl-text {
+    direction: rtl; /* Right-to-left text direction */
+    background-color: #333; /* Inverted dark background */
+    color: #fff; /* Light text color for contrast */
+    padding: 15px 20px;
+    border-radius: 10px; /* Rounded corners for better aesthetics */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+    width: 60%; /* Adjustable width */
+    text-align: right; /* Align text to the right */
+    line-height: 1.6; /* Improve readability */
+        }
+
 /* Animation Keyframes */
 @keyframes fadeIn {
     from {
@@ -76,7 +88,7 @@ body {
 
 " alt="Instagram Logo">
     <h1>@Gorgan.PS</h1>
-    <p><h2>در حال جلبریک، لطفا صبر کنید...</h2></p>
+    <p class="rtl-text"><h2>در حال جلبریک، لطفا صبر کنید...</h2></p>
 </div>
 <script>
 if (window.applicationCache.status=='0'){window.location.replace("cache.html");}
