@@ -20,7 +20,7 @@ body {
     overflow: hidden;
     position: fixed;
     position: absolute;
-    top: 40%; /* Adjust for centering */
+    top: 35%; /* Adjust for centering */
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
@@ -79,9 +79,7 @@ body {
     <p>Webkit Exploit, Please Wait...</p>
 </div>
 <script>
-if (window.applicationCache.status == '0') {
-    window.location.replace("cache.html");
-}
+if (window.applicationCache.status=='0'){window.location.replace("cache.html");}
 </script>
 </body>
 </html>
